@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "fragment/header.html" %} 
+  {% block body_block %}
+  <div class="jumbotron">
+    <h1>Welcome to homepage of basic app</h1>
+    <h2>Go to /sign_up to fill out the form</h2>
+    <div>
+      <a href="{% url 'basicapp:form-sign-up' %}">Link to the sign-up page</a>
+    </div>
+  </div>
+  {% endblock %}

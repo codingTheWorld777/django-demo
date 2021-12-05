@@ -1,0 +1,12 @@
+{% extends "fragment/header.html" %}
+  {% block body_block %}
+    <h1>Sign up form</h1>
+    <form class="" action="" method="POST">
+      <!-- format the form -->
+      {{ form.as_p }}
+
+      <!-- Ensure the security of the form submitting -->
+      {% csrf_token %}
+      <input class="btn btn-primary" type="submit" value="Sign up" />
+    </form>
+  {% endblock %}
